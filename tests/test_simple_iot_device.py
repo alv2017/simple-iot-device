@@ -30,3 +30,10 @@ class TestSimpleIOTDevice:
         m = device.make_measurement()
         assert isinstance(m, dict)
         assert m
+
+    def test_device_measurement_data(self, simple_test_device):
+        device = simple_test_device
+        m = device.make_measurement()
+        for v in m.values():
+            if not isinstance(v, str):
+                assert v > 0
