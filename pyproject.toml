@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "simple-iot-device"
-version = "1.0.0"
+version = "1.0.1"
 description = "Simple IOT device simulator"
 readme = "README.md"
 authors = [{ name = "alv2017", email = "alv2017@protonmail.com" }]
