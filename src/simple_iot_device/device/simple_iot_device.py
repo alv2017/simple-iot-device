@@ -30,6 +30,6 @@ class SimpleIOTDevice(AbstractIOTDevice):
             ts=ts,
             temperature=round(temperature, 2),
             pressure=round(pressure, 2),
-            relative_humidity=round(relative_humidity),
+            relative_humidity=round(relative_humidity, 2),
         )
         return asdict(measurement)
