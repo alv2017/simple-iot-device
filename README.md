@@ -1,4 +1,4 @@
-# IOT Device
+# Simple IOT Device
 
 IOT device simulator.
 
