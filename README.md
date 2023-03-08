@@ -1,4 +1,4 @@
-# Simple IOT Device
+# Simple IOT Device (Python Packaging Example)
 
 IOT device simulator.
 
