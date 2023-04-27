@@ -45,7 +45,6 @@ jobs:
 
     steps:
     - name: Lint with isort
-      uses: actions/setup-python@v3
       run: |
         pip install isort
         isort src/
@@ -74,7 +73,6 @@ jobs:
 
     steps:
     - name: Test with pytest
-      uses: actions/setup-python@v3
       run: |
         pip install pytest
         ls -l
