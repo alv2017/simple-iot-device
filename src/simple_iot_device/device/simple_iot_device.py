@@ -1,7 +1,8 @@
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from random import gauss, seed, uniform
 
 from simple_iot_device.prototype import AbstractIOTDevice
+
 from .utils import get_utc_time_as_string
 
 

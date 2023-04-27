@@ -37,12 +37,12 @@ jobs:
     - name: Lint with isort
       run: |
         pip install isort
-        isort src/
+        isort src/ --check-only --only-modified --verbose
 
     - name: Lint with black
       run: |
         pip install black
-        black src/
+        black src/ --check --verbose
 
     - name: Lint with flake8
       run: |
