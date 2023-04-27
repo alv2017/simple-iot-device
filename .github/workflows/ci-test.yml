@@ -1,7 +1,7 @@
 # This workflows will install Python dependencies, run tests and test with a variety of Python versions
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python Basic Workflow (Build, Lint, Test)
+name: Python Pytest Workflow
 
 on:
   push:
@@ -21,6 +21,9 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
+    - name: checkout source repo
+      uses: actions/checkout@main
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
