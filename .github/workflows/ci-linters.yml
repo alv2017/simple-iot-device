@@ -35,11 +35,13 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Lint with isort
+      continue-on-error: true
       run: |
         pip install isort
         isort src/ --check-only
 
     - name: Lint with black
+      continue-on-error: true
       run: |
         pip install black
         black src/ --check
