@@ -34,7 +34,6 @@ jobs:
 
   lint:
     needs: build
-    uses: actions/setup-python@v3
 
     runs-on: ubuntu-latest
 
@@ -46,6 +45,7 @@ jobs:
 
     steps:
     - name: Lint with isort
+      uses: actions/setup-python@v3
       run: |
         pip install isort
         isort src/
@@ -63,7 +63,6 @@ jobs:
 
   test:
     needs: build
-    uses: actions/setup-python@v3
 
     runs-on: ubuntu-latest
 
@@ -75,6 +74,7 @@ jobs:
 
     steps:
     - name: Test with pytest
+      uses: actions/setup-python@v3
       run: |
         pip install pytest
         ls -l
